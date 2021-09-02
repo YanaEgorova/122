@@ -1,0 +1,39 @@
+.about {
+    padding: 5rem 0;
+    overflow: hidden;
+}
+.about img {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 1024px)  {
+  .about .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 40rem 35rem;
+      column-gap: 2rem;
+      row-gap: 2rem;
+  } 
+.about .item:first-child{
+    grid-column: 1 / 3;
+  grid-row: 1 / 2;    
+}
+.about .item:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;      
+}
+.about .item:last-child {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;      
+}
+.about .item:not(:last-child) {
+    margin: 0;     
+}
+.about .img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+}
